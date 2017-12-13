@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="alumnos">
+        <item>Iván Muñoz</item>
+        <item>Pablo Molina</item>
+        <item>Óliver Feirro</item>
+        <item>Iván Muñoz</item>
+        <item>Antonio Fernández</item>
+        <item>Sergio Quintana</item>
+        <item>Rubén Reina</item>
+        <item>Sandra Yorno</item>
+        <item>Carlos Barrales</item>
+        <item>Alejandro Sánchez</item>
+        <item>Jorge Javier De los Rios</item>
+        <item>Robin Thomas</item>
+        <item>Azahara Perujo</item>
+    </string-array>
+
+    <array name="otro">
+        <item>otro</item>
+    </array>
+
+</resources>

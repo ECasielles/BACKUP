@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_83b9548680cc6df2a4c38c03de2d4923fdfa9019/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="7bc65a4aafabc1847be520fc1d2cfef2dac94f1f">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_bae38fd8f458a3f87a4855a5b3274bd0c025d790/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="cb008d8278ca0a357d734d26cb1b82fad3fd1810">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d9a4275e5579e5c641c52aec17917d229d43360e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_79d82a32b3776fbd61eee6712c637e59b3ece9e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_0440867eb6946d15c6ebf5e27a20f3e7ae4e4159/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_cc8fbc6574ae03dc8eabf308f51be1b5d31ee36a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_1ff134a78a0b088ec1a2618338be11b05ffa6bd6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_a37ee4aaa913d86ffb7773c5655ab6b76db59ad5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_dad40fceea92ce49b70ce0b06ce1d50fd60b06e9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_ef7563e0b65b6b86f6fb840669cebf93287a19a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="f557af750c8eeac57e451d25cedba30c32ad4b07">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_7a5cb2bf5fe337f17230ecf848fc05946d9771a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_b5679adfaf4c63a239d6ea7b2d897a7e094ba90f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_116de0b312d191674da5c77384117ac4eb6462be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_8942ac2853daa183d5cd12558e0d651c666ee347/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_4d90a30cc48be6c960da5a60de4947b68d2e636d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="271ff628380211a817e54969495a4cf5a7711546">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/PagerTitleStrip/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_036694d925467cf43262eec7a23732504d205c89/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_fb97ace296ae7377f4ff53e50d430b7ab8f6da85/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_dd5d05b2abafcdf41c4dae517a24763b58c92104/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/lourdes/Desarrollo/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/lourdes/Dropbox/Clases/DEINT_LIBRO/UT4 - Gestion Interfaz/ejercicios clase 16_17/TabLayout/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_f5680663f3f1546c382072c1b378e976d7eb75bb/classes.dex" />
+    </item>
+
+</items>

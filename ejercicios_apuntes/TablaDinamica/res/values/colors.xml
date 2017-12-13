@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="linea">#FF2E69AD</color>
+    <color name="fondo_cabecera">#FFFFFF</color>
+    <color name="fondo_celda">#FFAEE4E8</color>
+</resources>

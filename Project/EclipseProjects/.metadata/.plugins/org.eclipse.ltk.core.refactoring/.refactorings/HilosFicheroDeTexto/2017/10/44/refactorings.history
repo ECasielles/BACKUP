@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.psp&apos; to &apos;dam.psp&apos;&#x0A;- Original project: &apos;HilosFicheroDeTexto&apos;&#x0A;- Original element: &apos;HilosFicheroDeTexto/src/com.psp&apos;&#x0A;- Renamed element: &apos;HilosFicheroDeTexto/src/dam.psp&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.psp&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.psp" name="dam.psp" qualified="false" references="true" stamp="1509368935213" textual="false" version="1.0"/>
+</session>

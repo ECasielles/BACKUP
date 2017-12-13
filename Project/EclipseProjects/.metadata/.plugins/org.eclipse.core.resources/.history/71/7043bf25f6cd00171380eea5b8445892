@@ -1,0 +1,116 @@
+package dam.psp;
+
+/**
+ * 3. Escribe una clase llamada Relevos que simule una carrera con las condiciones siguientes.
+ * • Iniciar 4 hilos, que se quedarán a la espera de recibir una señal para empezar a correr.
+ * Una vez creados los hilos, se indicará que empiece la carrera, con lo que uno de los
+ * hilos deberá empezar a correr.
+ * • Cuando un hilo termina de correr pone algún mensaje en pantalla y espera 2 segundos,
+ * pasando el testigo a otro de los hilos para que empiece a correr, y termina su ejecución.
+ * • Cuando el último hilo termine de correr, el padre mostrará un mensaje indicando que
+ * todos los relevistas han finalizado la carrera.
+ * 
+ * @author Enrique Casielles Lapeira
+ *
+ */
+
+class Corredor extends Thread {
+	Relevos carrera;
+	int dorsal;
+	
+	public Corredor(Relevos carrera, int dorsal) {
+		this.carrera = carrera;
+		this.dorsal = dorsal;
+	}
+	
+	@Override
+	public void run() {
+		carrera.correr(dorsal);
+	}
+}
+
+class Relevos {
+	boolean esperaComienzo;
+	boolean esperaRelevo;
+	int nCorredores;
+	int turno = 0;
+	
+	public Relevos(int nCorredores) {
+		this.nCorredores = nCorredores;
+		esperaComienzo = true;
+		esperaRelevo = true;
+	}
+	
+	public synchronized void correr(int dorsal) {		
+		//Espera
+		while(esperaRelevo || turno < dorsal)
+			try {
+				System.out.println("Jugador " + dorsal + " espera...");
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		//Toma el relevo
+		System.out.println("Jugador " + dorsal + " toma el relevo.");
+		esperaRelevo = true;
+		//Corre
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		System.out.println("Jugador " + dorsal + " terminó una vuelta.");
+		//Testigo
+		nCorredores--;
+		turno++;
+		notify();
+	}
+	public synchronized void comenzar() {
+		System.out.println("¡Salida!");
+		esperaComienzo = false;
+		notify();
+	}
+	public synchronized void finCarrera() {
+		while(!esperaComienzo && nCorredores > 0)
+			try {
+				wait();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+	}
+}
+
+public class Ejercicio_3 extends Thread {
+	
+	@Override
+	public void run() {
+		int nCorredores = 4;
+		Relevos carrera = new Relevos(nCorredores);
+		Corredor[] corredores = new Corredor[nCorredores];
+		for (int i = 0; i < corredores.length; i++) {
+			corredores[i] = new Corredor(carrera, i);
+			corredores[i].start();
+		}
+		carrera.comenzar();
+		carrera.finCarrera();
+		for (int i = 0; i < corredores.length; i++) {
+			try {
+				corredores[i].join();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("Hilo principal da la carrera por finalizada");
+	}
+
+	public static void main(String[] args) {
+		Ejercicio_3 relevos = new Ejercicio_3();
+		relevos.start();
+		try {
+			relevos.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;ainteger&apos; in &apos;com.psp.Contador&apos; to &apos;cuentaAtomica&apos;&#x0A;- Original project: &apos;RaceCondition&apos;&#x0A;- Original element: &apos;com.psp.Contador.ainteger&apos;&#x0A;- Renamed element: &apos;com.psp.Contador.cuentaAtomica&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;ainteger&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;com.psp{TestCondicionCarrera.java[Contador^ainteger" name="cuentaAtomica" references="true" setter="false" stamp="1508761055863" textual="false" version="1.0"/>
+</session>

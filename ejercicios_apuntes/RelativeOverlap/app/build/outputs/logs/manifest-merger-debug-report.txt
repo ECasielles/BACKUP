@@ -1,0 +1,51 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:2:1-29:12
+	package
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:3:2-43
+	android:versionName
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:5:2-27
+		INJECTED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:4:2-25
+		INJECTED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml
+		INJECTED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:2:11-69
+supports-screens
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:7:2-11:32
+	android:largeScreens
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:9:3-30
+	android:smallScreens
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:11:3-30
+	android:normalScreens
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:10:3-31
+	android:anyDensity
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:8:3-28
+uses-sdk
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:13:2-15:34
+	android:targetSdkVersion
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:15:3-32
+	android:minSdkVersion
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:14:3-28
+application
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:17:2-27:16
+	android:icon
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:17:15-51
+activity#com.commonsware.android.overlap.OverlapDemo
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:18:3-26:14
+	android:label
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:20:4-36
+	android:name
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:19:4-31
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:21:4-25:20
+action#android.intent.action.MAIN
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:22:5-56
+	android:name
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:22:13-54
+category#android.intent.category.LAUNCHER
+ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:24:5-64
+	android:name
+		ADDED from /home/usuario/AndroidStudioProjects/ejercicios_apuntes/RelativeOverlap/app/src/main/AndroidManifest.xml:24:15-62

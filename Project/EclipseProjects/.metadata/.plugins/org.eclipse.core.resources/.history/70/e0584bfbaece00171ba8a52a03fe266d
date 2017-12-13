@@ -1,0 +1,216 @@
+package dam.psp;
+
+/** EJERCICIO: CONTROL DE STOCK DE ALMACEN
+ * 
+ * Se sabe que a un almacén llegan piezas cada 8 horas.
+ * La cantidad de piezas oscila cada vez entre 400 y 1000.
+ * Del almacén salen cada 24 horas piezas hacia la fábrica, a un ritmo de entre 2000 y 2500
+ * piezas (todas a la vez). El almacén parte de 8000 piezas y tiene una capacidad máxima de 20000 piezas.
+ * El programa debe simular este proceso parando si:
+ * 
+ * 	•Llega un nuevo cargamento y ya no cabe en el almacén.
+ * 	•La fábrica necesita piezas pero no hay suficientes piezas en el almacén.
+ * 
+ * Estrategia: Vamos a hacer la simulación con 4 clases:
+ * 
+ *  •Retirada: Simula retirada de piezas hacia la fábrica. Además escribe el número de
+ *  días transcurridos desde el comienzo.
+ *  •Envío: Simula el envío de piezas al almacén.
+ *  •Almacén: Simula el almacén. Tendrá funciones para atender las llegadas y las
+ *  salidas de piezas. Controlará si hay algún error y mostrará mensajes con el movimiento del almacén.
+ *  •Principal: Función main que pondrá en marcha la aplicación.
+ *  
+ * Envío y Retirada heredarán de la clase Thread y compartirán el objeto tipo Almacén.
+ * Ambas pararán cuando el Almacén indique que hay un error (bien porque no hay piezas
+ * para atender un pedido o porque no caben más piezas y hay un envío).
+ * Para simular el tiempo, las funciones run()  de las clases Retirada y Envio incluirán sendas
+ * llamadas a sleep:
+ * 
+ * En el caso de Retirada:
+		try { 
+			sleep(2400) ; // simulación de un día
+		} catch (InterruptedException e)  { 
+			e.printStackTrace() ; 
+		}
+ * En el caso de Envio:
+ * 		try {
+			sleep(800) ; // simulación de 8 horas
+		} catch (InterruptedException e)  { 
+			e.printStackTrace() ; 
+		}
+
+ * De está manera habrá 3 envíos por cada retirada.
+ * Ejemplo de simulación:
+ * 
+ * Día 1
+ * Pedido de 2179 piezas
+ * Hay 5821 piezas en el almacén
+ * Llegan 744 piezas
+ * Hay 6565 piezas en el almacén
+ * Llegan 580 piezas
+ * Hay 7145 piezas en el almacén
+ * Llegan 624 piezas
+ * Hay 7769 piezas en el almacén
+ * 
+ * Día 2
+ * Pedido de 2420 piezas
+ * Hay 5349 piezas en el almacén
+ * ...
+ * 
+ * Día 41
+ * Pedido de 2409 piezas
+ * Hay 699 piezas en el almacén
+ * Llegan 586 piezas
+ * Hay 1285 piezas en el almacén
+ * Llegan 404 piezas
+ * Hay 1689 piezas en el almacén
+ * Llegan 462 piezas
+ * Hay 2151 piezas en el almacén
+ * Día 42
+ * Pedido de 2483 piezas
+ * No hay piezas suficientes!
+ * 
+ * 
+ * @author Enrique Casielles Lapeira
+ *
+ */
+
+class Retirada extends Thread {
+	Almacen almacen;
+	int dia;
+	
+	public Retirada(Almacen almacen) {
+		this.almacen = almacen;
+		this.dia = 0;
+	}
+
+	@Override
+	public void run() {
+		while(almacen.getState())
+			try { 
+				sleep(2400) ; // simulación de un día
+			} catch (InterruptedException e) { 
+				e.printStackTrace() ; 
+			}
+		dia++;
+		System.out.println("Día: " + dia);
+		almacen.salen(2000 + (int) Math.round(501 * Math.random()));
+	}
+}
+class Envio extends Thread {
+	Almacen almacen;
+
+	public Envio(Almacen almacen) {
+		this.almacen = almacen;
+	}
+	
+	@Override
+	public void run() {
+		while(almacen.getState())
+			try {
+				sleep(800) ; // simulación de 8 horas
+			} catch (InterruptedException e) { 
+				e.printStackTrace() ; 
+			}
+		almacen.llegan(400 + (int) Math.round(601 * Math.random()));
+	}
+}
+class Almacen {
+	int inicialPiezas = 8000;
+	int maxPiezas = 20000;
+	int contadorEnvios;
+	boolean ocupado;
+	boolean pedidoRealizado;
+		
+	public Almacen() {
+		this.contadorEnvios = 0;
+		this.pedidoRealizado = false;
+		this.ocupado = true;
+	}
+	
+	public synchronized boolean getState() {
+		return ocupado;
+	}
+
+	public synchronized void llegan(int numPiezasEnvio)
+	{
+		while(!pedidoRealizado)
+		{
+			try {
+			this.wait();
+			}catch (InterruptedException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		if(state)
+		{
+		if(inicialPiezas+numPiezasEnvio>maxPiezas)
+		{
+			System.out.println("Hemos llenado el almacen!");
+			state = false;
+			pedidoRealizado=false;
+		}else {
+			inicialPiezas=inicialPiezas+numPiezasEnvio;
+			System.out.println("Llegan "+numPiezasEnvio+" piezas");
+			System.out.println("Hay "+inicialPiezas+" piezas en el almac�n");
+			contadorEnvios++;
+		}
+		if(contadorEnvios==3)
+		{
+			pedidoRealizado=false;
+			contadorEnvios=0;
+			
+		}
+		}
+		notify();
+	}
+	
+	public synchronized void salen(int numPiezasRetirada)
+	{
+		while(pedidoRealizado)
+		{
+			try {
+				this.wait();
+				}catch (InterruptedException e)
+				{
+					e.printStackTrace();
+				}
+		}
+		if(state)
+		{
+		System.out.println("Pedido de "+numPiezasRetirada);
+		if(inicialPiezas-numPiezasRetirada<1)
+		{
+			System.out.println("No hay piezas suficientes!");
+			state = false;
+			pedidoRealizado=true;
+		}
+		else {
+			
+			inicialPiezas=inicialPiezas-numPiezasRetirada;
+			pedidoRealizado=true;
+			System.out.println("Hay "+inicialPiezas+" piezas en el almac�n");
+		}
+		}
+		notify();
+	}	
+}
+public class StockAlmacen {
+
+	public static void main(String[] args) {
+		Almacen almacen = new Almacen();
+		
+		Retirada retirada = new Retirada(almacen);
+		Envio envio = new Envio(almacen);
+	
+		retirada.start();
+		envio.start();
+		try {
+			retirada.join();
+			envio.join();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}		
+	}
+}
